@@ -35,7 +35,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { LogBox } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
+import {DrawerContent} from './Screens/DrawerContent';
 import MainTabScreen from './Screens/MainTabScreen';
+import SupportScreen from './Screens/SupportScreen';
+import ProfileScreen from './Screens/ProfileScreen';
+import SavedScreen from './Screens/SavedDataScreen';
 
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs();
@@ -46,9 +50,11 @@ const Drawer =createDrawerNavigator();
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={MainTabScreen} />
-        {/* <Drawer.Screen name="Details" component={DetailsStackScreen} /> */}
+      <Drawer.Navigator drawerContent={props => <DrawerContent {...props}/>} >
+        <Drawer.Screen name="HomeDrawer" component={MainTabScreen} />
+        <Drawer.Screen name="Support" component={SupportScreen} />
+        <Drawer.Screen name="Profile" component={ProfileScreen} />
+        <Drawer.Screen name="Saved" component={SavedScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
