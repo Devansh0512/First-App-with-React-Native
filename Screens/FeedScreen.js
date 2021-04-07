@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const FeedScreen = ({navigation}) => {
     return (
       <View style={styles.container}>
-        <Text>Welcome to the Feed</Text>
+        <Text>Welcome to the Feed.</Text>
       </View>
     );
 };
