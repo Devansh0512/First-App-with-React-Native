@@ -23,7 +23,7 @@ export function DrawerContent(props){
                        <View style={{flexDirection:'row',marginTop:15}}>
                             <Avatar.Image
                                 source={{
-                                    uri:'https://instagram.fccu7-1.fna.fbcdn.net/v/t51.2885-19/s320x320/26157992_159656174668114_8152239671775068160_n.jpg?tp=1&_nc_ht=instagram.fccu7-1.fna.fbcdn.net&_nc_ohc=quKet1JuUo0AX8hkj5U&edm=ABfd0MgAAAAA&ccb=7-4&oh=06247539c76f0908a50f950a8f07e81d&oe=609348F5&_nc_sid=7bff83'
+                                    uri:'https://instagram.fpnq13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/26157992_159656174668114_8152239671775068160_n.jpg?tp=1&_nc_ht=instagram.fpnq13-1.fna.fbcdn.net&_nc_ohc=1KAGp3UwD3cAX9uJD0F&edm=ABfd0MgBAAAA&ccb=7-4&oh=eda17444efe24f54fbf7671fae63258c&oe=60E58CF5&_nc_sid=7bff83'
                                 }}
                                 size={50}
                            />
